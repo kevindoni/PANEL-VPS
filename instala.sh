@@ -69,7 +69,11 @@ v1=$(curl -sSL "https://raw.githubusercontent.com/kevindoni/PANEL-VPS/master/ver
 echo "$v1" > /etc/adm-lite/versao_script
 wget -i $HOME/lista -o /dev/null
 echo > /usr/bin/adm-ultimate && chmod +x /usr/bin/adm-ultimate
+<<<<<<< HEAD
 echo -e "${cor[3]} $(source trans -b pt:${id} "Dependencies Will Now Be Installed")"
+=======
+echo -e "${cor[3]} $(source trans -b pt:${id} "Agora Sera Instalado As Dependencias")"
+>>>>>>> 934e3009e5a82f604a9387a35eff4ea4f42ac3f9
 echo -e "$barra"
 cd /etc/adm-lite
 chmod +x ./*
@@ -135,6 +139,7 @@ id="pt"
 ;;
 esac
 echo -e "$barra"
+<<<<<<< HEAD
 echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALLER PANEL SCRIPTS") ®"
 echo -e "$barra"
 echo -e "${cor[3]} $(source trans -b pt:${id} "Starting Installation...")"
@@ -142,3 +147,12 @@ echo -e "$barra"
 echo -ne "${cor[4]}"
 wget -O lista https://raw.githubusercontent.com/kevindoni/PANEL-VPS/master/Install/lista -o /dev/null
 valid_fun
+=======
+echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") ®"
+echo -e "$barra"
+echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instalação...")"
+echo -e "$barra"
+echo -ne "${cor[4]}"
+wget -O lista https://raw.githubusercontent.com/kevindoni/PANEL-VPS/master/Install/lista -o /dev/null
+valid_fun
+>>>>>>> 934e3009e5a82f604a9387a35eff4ea4f42ac3f9
