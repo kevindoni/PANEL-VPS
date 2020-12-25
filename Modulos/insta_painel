@@ -14,18 +14,17 @@ figlet ADM.PRO ULTIMATE
 echo -e "${f}"
 sleep 2
 echo
-echo -e "${ver}            +++++ ATENÇÃO +++++${am}     
-TODAS AS SENHA A SEGUIR COLOQUE SEMPRE A MESMA${f}"
-read -p "Enter, Para Prosseguir!"
+echo -e "${ver}            +++++ ATTENTION +++++${am}     
+ALL PASSWORDS NEXT ALWAYS PUT THE SAME${f}"
+read -p "Enter, To Proceed!"
 apt-get install php5 libapache2-mod-php5 php5-mcrypt -y
 apt-get install mysql-server php5-mysql -y
 mysql_install_db
 echo ""
 echo -e "${am}Sempre que solicitado${ver}[Y/N]${am}escolha a opção${ver}Y${am} e de ${ve}OK.${am} para tudo que pedir.
 ...
-${am}O proximo procedimento de instalaçao vai te pedir uma senha
-ai vcs digita a senha que digitou antes e reconfirma ela ai depois do ir apertando ${ver}Y${f}"
-read -p "Enter, Para Prosseguir!"
+${am}The next installation procedure will ask you for a password then you type the password you typed before and reconfirm it there after pressing ${ver}Y${f}"
+read -p "Enter, To Proceed!"
 mysql_secure_installation
 echo -e "${az}AGUARDE A INSTALAÇÃO${f}"
 sleep 2
@@ -34,15 +33,15 @@ php5enmod mcrypt
 service apache2 restart
 echo ""
 stty -echo
-tput setaf 7 ; tput bold ; read -p "Digita a mesma senha (MySQL Password): " var7 ; tput sgr0
+tput setaf 7 ; tput bold ; read -p "Enter the same password (MySQL Password): " var7 ; tput sgr0
 echo ""
 stty echo ; echo
 mysql -h localhost -u root -p$var7 -e "CREATE DATABASE adm"
-echo -e "${ver}ATENÇÃO - LOGIN ASEGUIR É PESSOAL NAO DIVULGUEM ${f}"
+echo -e "${ver}ATTENTION - LOGIN FOLLOWING IS PERSONAL DO NOT DISCLOSE ${f}"
 echo ""
-echo -e "${am}Agora vamos colocar um LOGIN e SENHA de acesso a pagina de upload${ve}"
+echo -e "${am}Now let's put a LOGIN and PASSWORD to access the upload page${ve}"
 	read -p "Login: " var2
-	read -p "Senha: " var3
+	read -p "Password: " var3
 	echo -ne "${f}"
 
 cd /var/www/
@@ -71,15 +70,15 @@ sed -i "s;adm4321;$var3;g" ./banco_de_dados.sql > /dev/null 2>&1
 mysql -h localhost -u root -p$var7 adm < banco_de_dados.sql > /dev/null 2>&1
 rm -rf /var/www/temp
 
-echo -e "${am}PAINEL DE UPLOAD DE EHI INSTALADO PARA ENTRAR NO SEU PAINEL ACESSE
+echo -e "${am}EHI UPLOAD PANEL INSTALLED TO ENTER YOUR PANEL ACCESS
 ${az}-------------------------------------------------------------------
 ${ver}Url: ${ve}$ip:81/login.php
 ${am}Login: ${ve}$var2
 ${am}Senha: ${ve}$var3
-${am}LINK PAGINA INICIAL ${ve}( $ip:81 )
+${am}LINK HOME PAGE ${ve}( $ip:81 )
 ${az}-------------------------------------------------------------------${f}"
 echo -e "${am}"
-read -p "Aperte ENTER, Para continuar" naoa
+read -p "Press ENTER, to continue" naoa
 sleep 2
 echo -e "${f}"
 exit
