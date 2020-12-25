@@ -18,7 +18,6 @@ apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/ke
 
 -------------------------------------------------------------------------------
 
-apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/kevindoni/PANEL-VPS/master/instala.sh?token=AFM74Q2IWZVKQOCOOTABRRK74WHPM;chmod 777 instala.sh* && ./instala.sh*
 
 ```
 * NO MINING!
