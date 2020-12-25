@@ -114,9 +114,9 @@ apt-get install gawk -y > /dev/null 2>&1
 wget -O trans https://raw.githubusercontent.com/kevindoni/PANEL-VPS/master/Install/trans -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
 echo -e "$barra"
-echo -e "${cor[2]}SELECCIONAR IDIOMA\n$barra \n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
+echo -e "${cor[2]}SELECT LANGUAGE\n$barra \n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
 echo -e "$barra"
-echo -ne " OPCION: "; read lang
+echo -ne " OPTION: "; read lang
 case $lang in
 1)
 id="pt"
@@ -135,9 +135,9 @@ id="pt"
 ;;
 esac
 echo -e "$barra"
-echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") ®"
+echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALLER PANEL SCRIPTS") ®"
 echo -e "$barra"
-echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instalação...")"
+echo -e "${cor[3]} $(source trans -b pt:${id} "Starting Installation...")"
 echo -e "$barra"
 echo -ne "${cor[4]}"
 wget -O lista https://raw.githubusercontent.com/kevindoni/PANEL-VPS/master/Install/lista -o /dev/null
