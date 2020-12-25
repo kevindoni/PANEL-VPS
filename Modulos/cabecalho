@@ -694,8 +694,4 @@ echo -e "${cor[2]} ° ${cor[3]} ${txt[1]} $__onlines"
 echo -e "${cor[2]} ° ${cor[3]} ${txt[2]} $__vencidos"
 echo -e "${cor[2]} ° ${cor[3]} ${txt[3]} $_os"
 echo -e "${cor[1]} =================================== ${cor[0]}"
-<<<<<<< HEAD
 echo -e "${cor[2]} ${vesaoSCT} ${cor[0]}"
-=======
-echo -e "${cor[2]} ${vesaoSCT} ${cor[0]}"
->>>>>>> 934e3009e5a82f604a9387a35eff4ea4f42ac3f9
