@@ -14,7 +14,7 @@
 
 ## Installation
 
-apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/instala.sh; chmod 777 instala.sh* && ./instala.sh*
+apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/kevindoni/PANEL-VPS/master/instala.sh; chmod 777 instala.sh* && ./instala.sh*
 
 -------------------------------------------------------------------------------
 
